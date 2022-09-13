@@ -1,7 +1,7 @@
 class FoodsController < ApplicationController
     def index
-        @food = FoodFacade.search_list_by_food(params[:search])
-
+        @food = FoodFacade.search_list_by_food(params[:q])
+        
     end
 
     private
