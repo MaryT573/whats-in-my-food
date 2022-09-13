@@ -1,0 +1,11 @@
+<h1> Food Count: <%= @foods.count %> </h1>
+
+<div id="10foods"> 
+<% @foods.each_with_index do |foo, index| %>
+    <% if index < 10 %>
+        <h2> <%= index + 1 %>. Food Name: <%= foo.name %> </h2> 
+        <h3> Food Brand: <%= foo.brand %> </h3> 
+        <h3> Food Ingredients: <%= foo.ingredients %> </h3>
+        <h3> Food Code: <%= foo.code %> </h3> 
+    <% end %> 
+<% end %> </div>
